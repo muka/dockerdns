@@ -104,8 +104,16 @@ func main() {
 			}
 		}()
 
-		parser.FetchNetworks()
+		// go parser.ListenEvents()
+		err := parser.FetchNetworks()
+		if err != nil {
+			log.Fatalf("Failed to load networks: %s", err.Error())
+			return err
+		}
+		// parser.WaitForContainer()
+
 		select {}
+
 		// return nil
 	}
 
