@@ -104,6 +104,7 @@ func main() {
 			}
 		}()
 
+		parser.ListenEvents()
 		parser.FetchNetworks()
 		select {}
 		// return nil
