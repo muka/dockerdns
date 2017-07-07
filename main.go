@@ -36,7 +36,7 @@ func main() {
 		},
 		cli.StringFlag{
 			Name:   "domain, d",
-			Value:  "service.local",
+			Value:  "docker.lan",
 			Usage:  "Set the default domain to append to each host name",
 			EnvVar: "DOMAIN",
 		},
